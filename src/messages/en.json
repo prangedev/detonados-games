@@ -1,0 +1,255 @@
+{
+  "nav": {
+    "home": "Home",
+    "feed": "Feed",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile",
+    "login": "Log in",
+    "register": "Sign up",
+    "logout": "Log out",
+    "notifications": "Notifications",
+    "hardwareCheck": "Test my PC",
+    "settings": "Preferences",
+    "admin": "Admin",
+    "freeGames": "Free Games",
+    "shop": "Shop",
+    "faq": "FAQ",
+    "more": "More"
+  },
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "Search games...",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "back": "Back",
+    "all": "All"
+  },
+  "home": {
+    "title": "Detonados Games",
+    "subtitle": "Complete guides, requirements and compatibility for the most played games.",
+    "filterByPlatform": "Filter by platform",
+    "noResults": "No games found with these filters."
+  },
+  "feed": {
+    "title": "Feed",
+    "subtitle": "News and recommendations for you.",
+    "recent": "Recently published",
+    "recommended": "Based on what you've viewed",
+    "recommendedEmpty": "Check out some games to get recommendations.",
+    "loginForRecommendations": "Log in to get personalized recommendations."
+  },
+  "game": {
+    "minRequirements": "Minimum requirements",
+    "recRequirements": "Recommended requirements",
+    "walkthrough": "Walkthrough",
+    "platforms": "Platforms",
+    "protonCompat": "Linux/Steam Deck compatibility (ProtonDB)",
+    "checkYourHardware": "Can my PC run this game?",
+    "os": "OS",
+    "processor": "Processor",
+    "memory": "Memory",
+    "graphics": "Graphics card",
+    "storage": "Storage",
+    "noWalkthrough": "Walkthrough in progress — check back soon.",
+    "selectPlatformTitle": "Which platform will you play on?",
+    "selectPlatformSubtitle": "This adjusts the requirements and tools shown here.",
+    "changePlatform": "Change platform",
+    "pcOnlyNotice": "System requirements and the hardware checker are PC-only.",
+    "mobileRequirements": "Estimated Mobile requirements",
+    "iosVersion": "Minimum iOS",
+    "androidVersion": "Minimum Android",
+    "iosNotFound": "Not found on the App Store",
+    "mobileEstimateNotice": "There's no structured public source for mobile RAM/CPU requirements the way there is for PC. The iOS version comes from the App Store when found; the other values are estimates.",
+    "comments": "Comments",
+    "commentPlaceholder": "Leave a comment about this game...",
+    "commentSubmit": "Comment",
+    "commentEmpty": "Be the first to comment.",
+    "commentLoginRequired": "Log in to comment.",
+    "commentDelete": "Remove",
+    "save": "Save"
+  },
+  "hardware": {
+    "title": "Compatibility checker",
+    "subtitle": "Enter your hardware and see if your PC can run the game.",
+    "cpuLabel": "Processor",
+    "gpuLabel": "Graphics card",
+    "ramLabel": "RAM (GB)",
+    "checkButton": "Check compatibility",
+    "selectGame": "Choose a game",
+    "verdictGood": "Good",
+    "verdictWarning": "Caution",
+    "verdictBad": "Poor",
+    "verdictGoodDesc": "Your PC meets the recommended requirements.",
+    "verdictWarningDesc": "Your PC can run it, but only at minimum requirements.",
+    "verdictBadDesc": "Your PC is below the minimum requirements.",
+    "disclaimer": "Estimate based on a reference component table; real-world results may vary."
+  },
+  "auth": {
+    "loginTitle": "Log in to your account",
+    "registerTitle": "Create your account",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "confirmPassword": "Confirm password",
+    "loginButton": "Log in",
+    "registerButton": "Create account",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "error": "Invalid email or password.",
+    "registerError": "Couldn't create the account. Try another email."
+  },
+  "profile": {
+    "title": "Profile",
+    "level": "Level",
+    "xp": "XP",
+    "xpToNext": "XP to next level",
+    "achievements": "Achievements",
+    "stats": "Stats",
+    "gamesViewed": "Games viewed",
+    "memberSince": "Member since",
+    "points": "Points",
+    "gamesSaved": "Games saved",
+    "savedGames": "Saved Walkthroughs",
+    "savedGamesEmpty": "You haven't saved any games yet."
+  },
+  "leaderboard": {
+    "title": "Global Leaderboard",
+    "subtitle": "The players with the most XP on Detonados Games.",
+    "rank": "Rank",
+    "player": "Player",
+    "xp": "XP",
+    "level": "Level"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "You have no notifications right now.",
+    "markAllRead": "Mark all as read"
+  },
+  "settings": {
+    "notificationsTitle": "Notification preferences",
+    "channels": "Channels",
+    "inApp": "In-app",
+    "email": "Email",
+    "push": "Push (browser)",
+    "types": "Notification types",
+    "newGames": "New games published",
+    "achievements": "Achievements unlocked",
+    "levelUp": "Level up",
+    "enablePush": "Enable push notifications on this device",
+    "saved": "Preferences saved."
+  },
+  "rarity": {
+    "COMUM": "Common",
+    "RARA": "Rare",
+    "EPICA": "Epic",
+    "LENDARIA": "Legendary"
+  },
+  "freeGames": {
+    "title": "Free Games",
+    "subtitle": "Limited-time offers on Steam, Epic Games, GOG, PlayStation and Xbox.",
+    "noOffers": "No offers available right now — check back later.",
+    "endsOn": "Until",
+    "source": "Data provided by GamerPower (gamerpower.com). Redemption always happens on each store's official site."
+  },
+  "shopPage": {
+    "title": "Points Shop",
+    "subtitle": "Every 100 XP earned unlocks 1 Point to spend here.",
+    "loginRequired": "Log in to see your points and buy items.",
+    "groupNameColor": "Name color",
+    "groupFrame": "Avatar frame",
+    "groupAvatar": "Avatar icon",
+    "equipped": "Equipped",
+    "equip": "Equip",
+    "points": "pts",
+    "raffleComingSoon": "Random game key raffle — coming soon."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about Detonados Games.",
+    "items": [
+      {
+        "q": "What is Detonados Games?",
+        "a": "A game walkthrough portal with system requirements, a hardware compatibility checker, XP, achievements, and a community that comments on and rates games."
+      },
+      {
+        "q": "How does the hardware compatibility checker work?",
+        "a": "You enter your processor, graphics card and RAM, and we compare it against the game's requirements using a reference component table. It's a good estimate, not an exact measurement."
+      },
+      {
+        "q": "Are the Mobile requirements real?",
+        "a": "The minimum iOS version really comes from the App Store. RAM, storage and the minimum Android version are estimates, since there's no official public source for mobile game specs the way there is for Steam."
+      },
+      {
+        "q": "How do I earn XP?",
+        "a": "15 XP for logging in (once per day), 50 XP the first time you comment on or rate each game, and variable XP for unlocking achievements."
+      },
+      {
+        "q": "What are Points and the Shop?",
+        "a": "Every 100 XP you accumulate earns 1 Point. Spend points on a name color, avatar frame and profile icons in the Shop."
+      },
+      {
+        "q": "How do user roles work?",
+        "a": "User is the default. Moderator moderates comments and fixes existing games. Administrator has full control, including creating/deleting games and site settings."
+      },
+      {
+        "q": "Does the Feed use cookies?",
+        "a": "Yes — a first-party cookie remembers which genres you view most, to suggest similar games, even if you're not logged in. This data is never sold or shared with third parties."
+      },
+      {
+        "q": "How does the Free Games section work?",
+        "a": "We show limited-time free game offers on Steam, Epic Games, GOG, PlayStation and Xbox, using public data from GamerPower. Redemption always happens on each store's official site."
+      },
+      {
+        "q": "Can I become a Moderator or Administrator?",
+        "a": "Only an Administrator can promote other users to Moderator or Administrator, from the panel at /admin/users."
+      }
+    ]
+  },
+  "admin": {
+    "dashboardTitle": "Admin Dashboard",
+    "navDashboard": "Overview",
+    "navGames": "Games",
+    "navComments": "Comments",
+    "navUsers": "Users",
+    "navSettings": "Settings",
+    "statUsers": "Users",
+    "statGames": "Published games",
+    "statComments": "Comments",
+    "statNotifications": "Notifications sent",
+    "gamesTitle": "Manage games",
+    "gamesNew": "New game",
+    "gamesEdit": "Edit",
+    "gamesDelete": "Delete",
+    "gamesDeleteConfirm": "Are you sure you want to delete this game?",
+    "formTitle": "Title",
+    "formSlug": "Slug (URL)",
+    "formDescription": "Short description",
+    "formDetonado": "Walkthrough (text)",
+    "formHeaderImage": "Image URL",
+    "formGenres": "Genres (comma-separated)",
+    "formPlatforms": "Platforms",
+    "formSave": "Save",
+    "usersTitle": "Manage users",
+    "commentsTitle": "Moderate comments",
+    "commentsEmpty": "No comments to moderate.",
+    "commentsRestore": "Restore",
+    "commentsHiddenLabel": "Hidden",
+    "settingsTitle": "Site settings",
+    "settingsThemeAccent": "Theme accent color",
+    "settingsSchedule": "Publishing shift times",
+    "settingsMorning": "Morning",
+    "settingsAfternoon": "Afternoon",
+    "settingsEvening": "Evening",
+    "settingsApi": "API keys",
+    "settingsResendKey": "Resend key (email)",
+    "settingsVapidInfo": "VAPID keys (push) can only be changed via the .env file — restart the server after changing. Configured:",
+    "settingsDatabase": "Database",
+    "settingsDatabaseHint": "Use Prisma Studio to view and edit every table in the database:",
+    "settingsSaved": "Settings saved.",
+    "roleUser": "User",
+    "roleModerator": "Moderator",
+    "roleAdmin": "Administrator"
+  }
+}

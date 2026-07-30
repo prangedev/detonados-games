@@ -1,0 +1,255 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "feed": "Fil d'actualité",
+    "leaderboard": "Classement",
+    "profile": "Profil",
+    "login": "Connexion",
+    "register": "Créer un compte",
+    "logout": "Déconnexion",
+    "notifications": "Notifications",
+    "hardwareCheck": "Tester mon PC",
+    "settings": "Préférences",
+    "admin": "Administration",
+    "freeGames": "Jeux Gratuits",
+    "shop": "Boutique",
+    "faq": "FAQ",
+    "more": "Plus"
+  },
+  "common": {
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher des jeux...",
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "submit": "Envoyer",
+    "back": "Retour",
+    "all": "Toutes"
+  },
+  "home": {
+    "title": "Detonados Games",
+    "subtitle": "Guides complets, configurations requises et compatibilité pour les jeux les plus joués.",
+    "filterByPlatform": "Filtrer par plateforme",
+    "noResults": "Aucun jeu trouvé avec ces filtres."
+  },
+  "feed": {
+    "title": "Fil d'actualité",
+    "subtitle": "Nouveautés et recommandations pour vous.",
+    "recent": "Publiés récemment",
+    "recommended": "Basé sur ce que vous avez consulté",
+    "recommendedEmpty": "Consultez quelques jeux pour recevoir des recommandations.",
+    "loginForRecommendations": "Connectez-vous pour recevoir des recommandations personnalisées."
+  },
+  "game": {
+    "minRequirements": "Configuration minimale",
+    "recRequirements": "Configuration recommandée",
+    "walkthrough": "Soluce",
+    "platforms": "Plateformes",
+    "protonCompat": "Compatibilité Linux/Steam Deck (ProtonDB)",
+    "checkYourHardware": "Mon PC peut-il faire tourner ce jeu ?",
+    "os": "Système",
+    "processor": "Processeur",
+    "memory": "Mémoire",
+    "graphics": "Carte graphique",
+    "storage": "Stockage",
+    "noWalkthrough": "Soluce en préparation — revenez bientôt.",
+    "selectPlatformTitle": "Sur quelle plateforme allez-vous jouer ?",
+    "selectPlatformSubtitle": "Cela ajuste la configuration requise et les outils affichés ici.",
+    "changePlatform": "Changer de plateforme",
+    "pcOnlyNotice": "La configuration requise et le vérificateur de compatibilité sont réservés au PC.",
+    "mobileRequirements": "Configuration estimée pour Mobile",
+    "iosVersion": "iOS minimum",
+    "androidVersion": "Android minimum",
+    "iosNotFound": "Introuvable sur l'App Store",
+    "mobileEstimateNotice": "Il n'existe pas de source publique structurée pour les exigences de RAM/CPU mobile comme pour le PC. La version iOS provient de l'App Store lorsqu'elle est trouvée ; les autres valeurs sont des estimations.",
+    "comments": "Commentaires",
+    "commentPlaceholder": "Laissez un commentaire sur ce jeu...",
+    "commentSubmit": "Commenter",
+    "commentEmpty": "Soyez le premier à commenter.",
+    "commentLoginRequired": "Connectez-vous pour commenter.",
+    "commentDelete": "Supprimer",
+    "save": "Enregistrer"
+  },
+  "hardware": {
+    "title": "Vérificateur de compatibilité",
+    "subtitle": "Indiquez votre configuration pour voir si votre PC peut faire tourner le jeu.",
+    "cpuLabel": "Processeur",
+    "gpuLabel": "Carte graphique",
+    "ramLabel": "Mémoire RAM (Go)",
+    "checkButton": "Vérifier la compatibilité",
+    "selectGame": "Choisir un jeu",
+    "verdictGood": "Bon",
+    "verdictWarning": "Attention",
+    "verdictBad": "Insuffisant",
+    "verdictGoodDesc": "Votre PC répond à la configuration recommandée.",
+    "verdictWarningDesc": "Votre PC peut faire tourner le jeu, mais seulement au minimum requis.",
+    "verdictBadDesc": "Votre PC est en dessous de la configuration minimale.",
+    "disclaimer": "Estimation basée sur une table de référence des composants ; les résultats réels peuvent varier."
+  },
+  "auth": {
+    "loginTitle": "Connectez-vous à votre compte",
+    "registerTitle": "Créez votre compte",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "name": "Nom",
+    "confirmPassword": "Confirmer le mot de passe",
+    "loginButton": "Connexion",
+    "registerButton": "Créer le compte",
+    "noAccount": "Pas encore de compte ?",
+    "haveAccount": "Déjà un compte ?",
+    "error": "E-mail ou mot de passe invalide.",
+    "registerError": "Impossible de créer le compte. Essayez un autre e-mail."
+  },
+  "profile": {
+    "title": "Profil",
+    "level": "Niveau",
+    "xp": "XP",
+    "xpToNext": "XP avant le niveau suivant",
+    "achievements": "Succès",
+    "stats": "Statistiques",
+    "gamesViewed": "Jeux consultés",
+    "memberSince": "Membre depuis",
+    "points": "Points",
+    "gamesSaved": "Jeux enregistrés",
+    "savedGames": "Soluces Enregistrées",
+    "savedGamesEmpty": "Vous n'avez encore enregistré aucun jeu."
+  },
+  "leaderboard": {
+    "title": "Classement Global",
+    "subtitle": "Les joueurs avec le plus d'XP sur Detonados Games.",
+    "rank": "Rang",
+    "player": "Joueur",
+    "xp": "XP",
+    "level": "Niveau"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "Vous n'avez aucune notification pour le moment.",
+    "markAllRead": "Tout marquer comme lu"
+  },
+  "settings": {
+    "notificationsTitle": "Préférences de notification",
+    "channels": "Canaux",
+    "inApp": "Dans l'application",
+    "email": "E-mail",
+    "push": "Push (navigateur)",
+    "types": "Types de notification",
+    "newGames": "Nouveaux jeux publiés",
+    "achievements": "Succès débloqués",
+    "levelUp": "Passage de niveau",
+    "enablePush": "Activer les notifications push sur cet appareil",
+    "saved": "Préférences enregistrées."
+  },
+  "rarity": {
+    "COMUM": "Commun",
+    "RARA": "Rare",
+    "EPICA": "Épique",
+    "LENDARIA": "Légendaire"
+  },
+  "freeGames": {
+    "title": "Jeux Gratuits",
+    "subtitle": "Offres à durée limitée sur Steam, Epic Games, GOG, PlayStation et Xbox.",
+    "noOffers": "Aucune offre disponible pour le moment — revenez plus tard.",
+    "endsOn": "Jusqu'au",
+    "source": "Données fournies par GamerPower (gamerpower.com). La récupération se fait toujours sur le site officiel de chaque boutique."
+  },
+  "shopPage": {
+    "title": "Boutique de Points",
+    "subtitle": "Chaque 100 XP accumulé débloque 1 Point à dépenser ici.",
+    "loginRequired": "Connectez-vous pour voir vos points et acheter des articles.",
+    "groupNameColor": "Couleur du nom",
+    "groupFrame": "Cadre d'avatar",
+    "groupAvatar": "Icône d'avatar",
+    "equipped": "Équipé",
+    "equip": "Équiper",
+    "points": "pts",
+    "raffleComingSoon": "Tirage au sort de clé de jeu aléatoire — bientôt disponible."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce qu'il faut savoir sur Detonados Games.",
+    "items": [
+      {
+        "q": "Qu'est-ce que Detonados Games ?",
+        "a": "Un portail de soluces de jeux, avec configuration requise, vérificateur de compatibilité matérielle, XP, succès et une communauté qui commente et note les jeux."
+      },
+      {
+        "q": "Comment fonctionne le vérificateur de compatibilité matérielle ?",
+        "a": "Vous indiquez votre processeur, votre carte graphique et votre RAM, et nous les comparons à la configuration requise du jeu à l'aide d'une table de référence des composants. C'est une bonne estimation, pas une mesure exacte."
+      },
+      {
+        "q": "Les configurations Mobile sont-elles réelles ?",
+        "a": "La version minimale d'iOS provient réellement de l'App Store. La RAM, le stockage et la version minimale d'Android sont des estimations, car il n'existe pas de source publique officielle équivalente à celle de Steam pour les jeux mobiles."
+      },
+      {
+        "q": "Comment est-ce que je gagne de l'XP ?",
+        "a": "15 XP pour vous connecter (une fois par jour), 50 XP la première fois que vous commentez ou notez chaque jeu, et de l'XP variable en débloquant des succès."
+      },
+      {
+        "q": "Que sont les Points et la Boutique ?",
+        "a": "Chaque 100 XP accumulé vous donne 1 Point. Échangez vos points contre une couleur de nom, un cadre d'avatar et des icônes de profil dans la Boutique."
+      },
+      {
+        "q": "Comment fonctionnent les rôles des utilisateurs ?",
+        "a": "Utilisateur est le rôle par défaut. Modérateur modère les commentaires et corrige les jeux existants. Administrateur a un contrôle total, y compris créer/supprimer des jeux et les paramètres du site."
+      },
+      {
+        "q": "Le Fil d'actualité utilise-t-il des cookies ?",
+        "a": "Oui — un cookie propre au site retient les genres que vous consultez le plus, pour suggérer des jeux similaires, même sans être connecté. Cette donnée n'est jamais vendue ni partagée avec des tiers."
+      },
+      {
+        "q": "Comment fonctionne la section Jeux Gratuits ?",
+        "a": "Nous affichons des offres de jeux gratuits à durée limitée sur Steam, Epic Games, GOG, PlayStation et Xbox, à partir des données publiques de GamerPower. La récupération se fait toujours sur le site officiel de chaque boutique."
+      },
+      {
+        "q": "Puis-je devenir Modérateur ou Administrateur ?",
+        "a": "Seul un Administrateur peut promouvoir d'autres utilisateurs au rang de Modérateur ou d'Administrateur, depuis le panneau à /admin/users."
+      }
+    ]
+  },
+  "admin": {
+    "dashboardTitle": "Panneau d'administration",
+    "navDashboard": "Aperçu",
+    "navGames": "Jeux",
+    "navComments": "Commentaires",
+    "navUsers": "Utilisateurs",
+    "navSettings": "Paramètres",
+    "statUsers": "Utilisateurs",
+    "statGames": "Jeux publiés",
+    "statComments": "Commentaires",
+    "statNotifications": "Notifications envoyées",
+    "gamesTitle": "Gérer les jeux",
+    "gamesNew": "Nouveau jeu",
+    "gamesEdit": "Modifier",
+    "gamesDelete": "Supprimer",
+    "gamesDeleteConfirm": "Voulez-vous vraiment supprimer ce jeu ?",
+    "formTitle": "Titre",
+    "formSlug": "Slug (URL)",
+    "formDescription": "Description courte",
+    "formDetonado": "Soluce (texte)",
+    "formHeaderImage": "URL de l'image",
+    "formGenres": "Genres (séparés par des virgules)",
+    "formPlatforms": "Plateformes",
+    "formSave": "Enregistrer",
+    "usersTitle": "Gérer les utilisateurs",
+    "commentsTitle": "Modérer les commentaires",
+    "commentsEmpty": "Aucun commentaire à modérer.",
+    "commentsRestore": "Restaurer",
+    "commentsHiddenLabel": "Masqué",
+    "settingsTitle": "Paramètres du site",
+    "settingsThemeAccent": "Couleur d'accent du thème",
+    "settingsSchedule": "Horaires des créneaux de publication",
+    "settingsMorning": "Matin",
+    "settingsAfternoon": "Après-midi",
+    "settingsEvening": "Soir",
+    "settingsApi": "Clés API",
+    "settingsResendKey": "Clé Resend (e-mail)",
+    "settingsVapidInfo": "Les clés VAPID (push) ne peuvent être changées que dans le fichier .env — redémarrez le serveur après modification. Configurée :",
+    "settingsDatabase": "Base de données",
+    "settingsDatabaseHint": "Utilisez Prisma Studio pour voir et modifier toutes les tables de la base de données :",
+    "settingsSaved": "Paramètres enregistrés.",
+    "roleUser": "Utilisateur",
+    "roleModerator": "Modérateur",
+    "roleAdmin": "Administrateur"
+  }
+}

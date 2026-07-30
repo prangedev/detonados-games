@@ -1,0 +1,255 @@
+{
+  "nav": {
+    "home": "홈",
+    "feed": "피드",
+    "leaderboard": "랭킹",
+    "profile": "프로필",
+    "login": "로그인",
+    "register": "회원가입",
+    "logout": "로그아웃",
+    "notifications": "알림",
+    "hardwareCheck": "내 PC 테스트",
+    "settings": "환경설정",
+    "admin": "관리자 패널",
+    "freeGames": "무료 게임",
+    "shop": "상점",
+    "faq": "자주 묻는 질문",
+    "more": "더보기"
+  },
+  "common": {
+    "search": "검색",
+    "searchPlaceholder": "게임 검색...",
+    "loading": "불러오는 중...",
+    "save": "저장",
+    "cancel": "취소",
+    "submit": "제출",
+    "back": "뒤로",
+    "all": "전체"
+  },
+  "home": {
+    "title": "Detonados Games",
+    "subtitle": "인기 게임의 완벽 공략, 사양 정보와 호환성을 확인하세요.",
+    "filterByPlatform": "플랫폼별 필터",
+    "noResults": "이 필터에 해당하는 게임이 없습니다."
+  },
+  "feed": {
+    "title": "피드",
+    "subtitle": "당신을 위한 소식과 추천 게임.",
+    "recent": "최근 공개된 게임",
+    "recommended": "조회 기록 기반 추천",
+    "recommendedEmpty": "몇 개의 게임을 확인하면 추천을 받을 수 있습니다.",
+    "loginForRecommendations": "로그인하면 맞춤 추천을 받을 수 있습니다."
+  },
+  "game": {
+    "minRequirements": "최소 사양",
+    "recRequirements": "권장 사양",
+    "walkthrough": "공략",
+    "platforms": "플랫폼",
+    "protonCompat": "Linux/Steam Deck 호환성 (ProtonDB)",
+    "checkYourHardware": "내 PC에서 실행될까요?",
+    "os": "운영체제",
+    "processor": "프로세서",
+    "memory": "메모리",
+    "graphics": "그래픽 카드",
+    "storage": "저장공간",
+    "noWalkthrough": "공략을 준비 중입니다. 곧 다시 확인해주세요.",
+    "selectPlatformTitle": "어떤 플랫폼에서 플레이하시나요?",
+    "selectPlatformSubtitle": "선택에 따라 표시되는 사양과 도구가 달라집니다.",
+    "changePlatform": "플랫폼 변경",
+    "pcOnlyNotice": "사양 정보와 호환성 검사기는 PC 전용입니다.",
+    "mobileRequirements": "Mobile 예상 사양",
+    "iosVersion": "iOS 최소 버전",
+    "androidVersion": "Android 최소 버전",
+    "iosNotFound": "App Store에서 찾을 수 없음",
+    "mobileEstimateNotice": "PC와 달리 Mobile용 RAM/CPU 사양에 대한 공식적인 구조화된 정보원은 없습니다. iOS 버전은 찾은 경우 App Store 정보를 사용하며, 나머지 값은 추정치입니다.",
+    "comments": "댓글",
+    "commentPlaceholder": "이 게임에 대한 댓글을 남겨보세요...",
+    "commentSubmit": "댓글 작성",
+    "commentEmpty": "첫 댓글을 남겨보세요.",
+    "commentLoginRequired": "댓글을 작성하려면 로그인하세요.",
+    "commentDelete": "삭제",
+    "save": "저장"
+  },
+  "hardware": {
+    "title": "호환성 검사기",
+    "subtitle": "하드웨어 정보를 입력하면 게임 실행 가능 여부를 확인할 수 있습니다.",
+    "cpuLabel": "프로세서",
+    "gpuLabel": "그래픽 카드",
+    "ramLabel": "RAM (GB)",
+    "checkButton": "호환성 확인",
+    "selectGame": "게임 선택",
+    "verdictGood": "좋음",
+    "verdictWarning": "주의",
+    "verdictBad": "부족",
+    "verdictGoodDesc": "권장 사양을 충족합니다.",
+    "verdictWarningDesc": "실행은 가능하지만 최소 사양만 충족합니다.",
+    "verdictBadDesc": "최소 사양에 미달합니다.",
+    "disclaimer": "참고용 부품 비교표를 기반으로 한 추정치이며 실제 결과와 다를 수 있습니다."
+  },
+  "auth": {
+    "loginTitle": "계정 로그인",
+    "registerTitle": "계정 만들기",
+    "email": "이메일",
+    "password": "비밀번호",
+    "name": "이름",
+    "confirmPassword": "비밀번호 확인",
+    "loginButton": "로그인",
+    "registerButton": "계정 만들기",
+    "noAccount": "계정이 없으신가요?",
+    "haveAccount": "이미 계정이 있으신가요?",
+    "error": "이메일 또는 비밀번호가 올바르지 않습니다.",
+    "registerError": "계정을 만들 수 없습니다. 다른 이메일을 사용해보세요."
+  },
+  "profile": {
+    "title": "프로필",
+    "level": "레벨",
+    "xp": "XP",
+    "xpToNext": "다음 레벨까지 XP",
+    "achievements": "업적",
+    "stats": "통계",
+    "gamesViewed": "조회한 게임",
+    "memberSince": "가입일",
+    "points": "포인트",
+    "gamesSaved": "저장한 게임",
+    "savedGames": "저장한 공략",
+    "savedGamesEmpty": "아직 저장한 게임이 없습니다."
+  },
+  "leaderboard": {
+    "title": "글로벌 랭킹",
+    "subtitle": "Detonados Games에서 가장 많은 XP를 획득한 플레이어.",
+    "rank": "순위",
+    "player": "플레이어",
+    "xp": "XP",
+    "level": "레벨"
+  },
+  "notifications": {
+    "title": "알림",
+    "empty": "현재 알림이 없습니다.",
+    "markAllRead": "모두 읽음으로 표시"
+  },
+  "settings": {
+    "notificationsTitle": "알림 환경설정",
+    "channels": "알림 채널",
+    "inApp": "앱 내 알림",
+    "email": "이메일",
+    "push": "푸시 알림 (브라우저)",
+    "types": "알림 유형",
+    "newGames": "신규 게임 공개",
+    "achievements": "업적 달성",
+    "levelUp": "레벨 업",
+    "enablePush": "이 기기에서 푸시 알림 활성화",
+    "saved": "환경설정이 저장되었습니다."
+  },
+  "rarity": {
+    "COMUM": "일반",
+    "RARA": "레어",
+    "EPICA": "에픽",
+    "LENDARIA": "전설"
+  },
+  "freeGames": {
+    "title": "무료 게임",
+    "subtitle": "Steam, Epic Games, GOG, PlayStation, Xbox의 기간 한정 무료 게임.",
+    "noOffers": "현재 이용 가능한 오퍼가 없습니다. 나중에 다시 확인해주세요.",
+    "endsOn": "종료일",
+    "source": "GamerPower(gamerpower.com)에서 제공하는 데이터입니다. 수령은 항상 각 스토어의 공식 사이트에서 이루어집니다."
+  },
+  "shopPage": {
+    "title": "포인트 상점",
+    "subtitle": "XP 100을 모을 때마다 사용할 수 있는 포인트 1개가 생깁니다.",
+    "loginRequired": "로그인하면 포인트를 확인하고 아이템을 구매할 수 있습니다.",
+    "groupNameColor": "이름 색상",
+    "groupFrame": "아바타 프레임",
+    "groupAvatar": "아바타 아이콘",
+    "equipped": "장착됨",
+    "equip": "장착하기",
+    "points": "P",
+    "raffleComingSoon": "무작위 게임 키 추첨 — 곧 공개됩니다."
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "Detonados Games에 대해 알아야 할 모든 것.",
+    "items": [
+      {
+        "q": "Detonados Games는 무엇인가요?",
+        "a": "사양 정보, 하드웨어 호환성 검사기, XP, 업적, 그리고 게임에 댓글과 평점을 남기는 커뮤니티를 갖춘 게임 공략 포털입니다."
+      },
+      {
+        "q": "하드웨어 호환성 검사기는 어떻게 작동하나요?",
+        "a": "프로세서, 그래픽 카드, RAM 정보를 입력하면 참고용 부품 비교표를 이용해 게임 사양과 비교합니다. 정확한 측정이 아닌 좋은 추정치입니다."
+      },
+      {
+        "q": "Mobile 사양 정보는 실제 데이터인가요?",
+        "a": "iOS 최소 버전은 실제로 App Store에서 가져옵니다. RAM, 저장공간, Android 최소 버전은 추정치입니다. PC의 Steam과 같은 공식 정보원이 Mobile에는 없기 때문입니다."
+      },
+      {
+        "q": "XP는 어떻게 얻나요?",
+        "a": "로그인 시 15XP(하루 한 번), 각 게임에 처음 댓글이나 평점을 남길 때 50XP, 업적 달성 시 다양한 XP를 얻습니다."
+      },
+      {
+        "q": "포인트와 상점은 무엇인가요?",
+        "a": "XP 100을 모을 때마다 포인트 1개를 얻습니다. 상점에서 포인트로 이름 색상, 아바타 프레임, 프로필 아이콘을 교환할 수 있습니다."
+      },
+      {
+        "q": "사용자 역할은 어떻게 작동하나요?",
+        "a": "사용자가 기본 역할입니다. 모더레이터는 댓글을 관리하고 기존 게임을 수정할 수 있습니다. 관리자는 게임 생성/삭제와 사이트 설정을 포함한 모든 권한을 가집니다."
+      },
+      {
+        "q": "피드는 쿠키를 사용하나요?",
+        "a": "네 — 사이트 자체 쿠키가 가장 많이 조회한 장르를 기억해 로그인하지 않아도 비슷한 게임을 추천합니다. 이 데이터는 판매되거나 제3자와 공유되지 않습니다."
+      },
+      {
+        "q": "무료 게임 섹션은 어떻게 작동하나요?",
+        "a": "GamerPower의 공개 데이터를 사용해 Steam, Epic Games, GOG, PlayStation, Xbox의 기간 한정 무료 게임을 보여줍니다. 수령은 항상 각 스토어의 공식 사이트에서 이루어집니다."
+      },
+      {
+        "q": "모더레이터나 관리자가 될 수 있나요?",
+        "a": "관리자만 /admin/users 패널에서 다른 사용자를 모더레이터나 관리자로 승급시킬 수 있습니다."
+      }
+    ]
+  },
+  "admin": {
+    "dashboardTitle": "관리자 패널",
+    "navDashboard": "개요",
+    "navGames": "게임",
+    "navComments": "댓글",
+    "navUsers": "사용자",
+    "navSettings": "설정",
+    "statUsers": "사용자 수",
+    "statGames": "공개된 게임 수",
+    "statComments": "댓글 수",
+    "statNotifications": "발송된 알림 수",
+    "gamesTitle": "게임 관리",
+    "gamesNew": "새 게임",
+    "gamesEdit": "수정",
+    "gamesDelete": "삭제",
+    "gamesDeleteConfirm": "이 게임을 정말 삭제하시겠습니까?",
+    "formTitle": "제목",
+    "formSlug": "슬러그 (URL)",
+    "formDescription": "짧은 설명",
+    "formDetonado": "공략 (텍스트)",
+    "formHeaderImage": "이미지 URL",
+    "formGenres": "장르 (쉼표로 구분)",
+    "formPlatforms": "플랫폼",
+    "formSave": "저장",
+    "usersTitle": "사용자 관리",
+    "commentsTitle": "댓글 관리",
+    "commentsEmpty": "관리할 댓글이 없습니다.",
+    "commentsRestore": "복원",
+    "commentsHiddenLabel": "숨김",
+    "settingsTitle": "사이트 설정",
+    "settingsThemeAccent": "테마 강조 색상",
+    "settingsSchedule": "게시 시간대 설정",
+    "settingsMorning": "아침",
+    "settingsAfternoon": "오후",
+    "settingsEvening": "저녁",
+    "settingsApi": "API 키",
+    "settingsResendKey": "Resend 키 (이메일)",
+    "settingsVapidInfo": "VAPID 키(푸시)는 .env 파일에서만 변경할 수 있습니다 — 변경 후 서버를 재시작하세요. 설정 상태:",
+    "settingsDatabase": "데이터베이스",
+    "settingsDatabaseHint": "데이터베이스의 모든 테이블을 보고 편집하려면 Prisma Studio를 사용하세요:",
+    "settingsSaved": "설정이 저장되었습니다.",
+    "roleUser": "사용자",
+    "roleModerator": "모더레이터",
+    "roleAdmin": "관리자"
+  }
+}

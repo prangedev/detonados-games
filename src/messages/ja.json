@@ -1,0 +1,255 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "feed": "フィード",
+    "leaderboard": "ランキング",
+    "profile": "プロフィール",
+    "login": "ログイン",
+    "register": "新規登録",
+    "logout": "ログアウト",
+    "notifications": "通知",
+    "hardwareCheck": "PCをテスト",
+    "settings": "設定",
+    "admin": "管理パネル",
+    "freeGames": "無料ゲーム",
+    "shop": "ショップ",
+    "faq": "よくある質問",
+    "more": "その他"
+  },
+  "common": {
+    "search": "検索",
+    "searchPlaceholder": "ゲームを検索...",
+    "loading": "読み込み中...",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "submit": "送信",
+    "back": "戻る",
+    "all": "すべて"
+  },
+  "home": {
+    "title": "Detonados Games",
+    "subtitle": "人気ゲームの完全攻略、必要動作環境、互換性情報。",
+    "filterByPlatform": "プラットフォームで絞り込み",
+    "noResults": "条件に一致するゲームが見つかりません。"
+  },
+  "feed": {
+    "title": "フィード",
+    "subtitle": "新着情報とあなたへのおすすめ。",
+    "recent": "最近公開されたゲーム",
+    "recommended": "閲覧履歴に基づくおすすめ",
+    "recommendedEmpty": "いくつかのゲームを見るとおすすめが表示されます。",
+    "loginForRecommendations": "ログインするとパーソナライズされたおすすめが表示されます。"
+  },
+  "game": {
+    "minRequirements": "最小動作環境",
+    "recRequirements": "推奨動作環境",
+    "walkthrough": "攻略",
+    "platforms": "対応プラットフォーム",
+    "protonCompat": "Linux/Steam Deck互換性 (ProtonDB)",
+    "checkYourHardware": "自分のPCで動作する?",
+    "os": "OS",
+    "processor": "プロセッサー",
+    "memory": "メモリ",
+    "graphics": "グラフィックカード",
+    "storage": "ストレージ",
+    "noWalkthrough": "攻略記事は準備中です。もうしばらくお待ちください。",
+    "selectPlatformTitle": "どのプラットフォームでプレイしますか?",
+    "selectPlatformSubtitle": "選択に応じて表示される動作環境とツールが変わります。",
+    "changePlatform": "プラットフォームを変更",
+    "pcOnlyNotice": "動作環境と互換性チェッカーはPC版のみ対象です。",
+    "mobileRequirements": "Mobile版の推定動作環境",
+    "iosVersion": "iOS最小バージョン",
+    "androidVersion": "Android最小バージョン",
+    "iosNotFound": "App Storeで見つかりませんでした",
+    "mobileEstimateNotice": "PCのようにMobile版のRAM/CPU要件を構造化して提供する公式情報源は存在しません。iOSのバージョンは見つかった場合App Storeの情報を使用し、それ以外の値は推定値です。",
+    "comments": "コメント",
+    "commentPlaceholder": "このゲームについてコメントを残す...",
+    "commentSubmit": "コメントする",
+    "commentEmpty": "最初のコメントを投稿しましょう。",
+    "commentLoginRequired": "コメントするにはログインしてください。",
+    "commentDelete": "削除",
+    "save": "保存"
+  },
+  "hardware": {
+    "title": "互換性チェッカー",
+    "subtitle": "お使いのハードウェアを入力して、動作するか確認しましょう。",
+    "cpuLabel": "プロセッサー",
+    "gpuLabel": "グラフィックカード",
+    "ramLabel": "メモリ (GB)",
+    "checkButton": "互換性を確認",
+    "selectGame": "ゲームを選択",
+    "verdictGood": "良好",
+    "verdictWarning": "注意",
+    "verdictBad": "不足",
+    "verdictGoodDesc": "推奨動作環境を満たしています。",
+    "verdictWarningDesc": "動作しますが、最小動作環境を満たすのみです。",
+    "verdictBadDesc": "最小動作環境を下回っています。",
+    "disclaimer": "参考用のパーツ比較表に基づく推定値です。実際の動作結果とは異なる場合があります。"
+  },
+  "auth": {
+    "loginTitle": "アカウントにログイン",
+    "registerTitle": "アカウントを作成",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "name": "名前",
+    "confirmPassword": "パスワード（確認）",
+    "loginButton": "ログイン",
+    "registerButton": "アカウントを作成",
+    "noAccount": "アカウントをお持ちでない方",
+    "haveAccount": "すでにアカウントをお持ちの方",
+    "error": "メールアドレスまたはパスワードが正しくありません。",
+    "registerError": "アカウントを作成できませんでした。別のメールアドレスをお試しください。"
+  },
+  "profile": {
+    "title": "プロフィール",
+    "level": "レベル",
+    "xp": "XP",
+    "xpToNext": "次のレベルまでのXP",
+    "achievements": "実績",
+    "stats": "統計",
+    "gamesViewed": "閲覧したゲーム",
+    "memberSince": "登録日",
+    "points": "ポイント",
+    "gamesSaved": "保存したゲーム",
+    "savedGames": "保存した攻略",
+    "savedGamesEmpty": "まだゲームを保存していません。"
+  },
+  "leaderboard": {
+    "title": "グローバルランキング",
+    "subtitle": "Detonados Gamesで最もXPを獲得したプレイヤー。",
+    "rank": "順位",
+    "player": "プレイヤー",
+    "xp": "XP",
+    "level": "レベル"
+  },
+  "notifications": {
+    "title": "通知",
+    "empty": "現在通知はありません。",
+    "markAllRead": "すべて既読にする"
+  },
+  "settings": {
+    "notificationsTitle": "通知設定",
+    "channels": "通知チャネル",
+    "inApp": "アプリ内通知",
+    "email": "メール",
+    "push": "プッシュ通知（ブラウザ）",
+    "types": "通知の種類",
+    "newGames": "新着ゲームの公開",
+    "achievements": "実績の解除",
+    "levelUp": "レベルアップ",
+    "enablePush": "このデバイスでプッシュ通知を有効にする",
+    "saved": "設定を保存しました。"
+  },
+  "rarity": {
+    "COMUM": "コモン",
+    "RARA": "レア",
+    "EPICA": "エピック",
+    "LENDARIA": "レジェンダリー"
+  },
+  "freeGames": {
+    "title": "無料ゲーム",
+    "subtitle": "Steam、Epic Games、GOG、PlayStation、Xboxの期間限定オファー。",
+    "noOffers": "現在利用可能なオファーはありません。後でまた確認してください。",
+    "endsOn": "期限",
+    "source": "データ提供: GamerPower (gamerpower.com)。受け取りは各ストアの公式サイトで行われます。"
+  },
+  "shopPage": {
+    "title": "ポイントショップ",
+    "subtitle": "XPが100貯まるごとに1ポイントが使用可能になります。",
+    "loginRequired": "ログインするとポイントの確認とアイテムの購入ができます。",
+    "groupNameColor": "名前の色",
+    "groupFrame": "アバターフレーム",
+    "groupAvatar": "アバターアイコン",
+    "equipped": "装備中",
+    "equip": "装備する",
+    "points": "pt",
+    "raffleComingSoon": "ゲームキーのランダム抽選 — 近日公開。"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "Detonados Gamesについて知っておきたいこと。",
+    "items": [
+      {
+        "q": "Detonados Gamesとは何ですか?",
+        "a": "動作環境、ハードウェア互換性チェッカー、XP、実績、そしてゲームにコメントや評価をつけるコミュニティを備えたゲーム攻略ポータルです。"
+      },
+      {
+        "q": "ハードウェア互換性チェッカーはどう機能しますか?",
+        "a": "プロセッサー、グラフィックカード、メモリを入力すると、参考用の部品比較表を使ってゲームの動作環境と比較します。正確な測定ではなく、良い推定値です。"
+      },
+      {
+        "q": "Mobileの動作環境は本物のデータですか?",
+        "a": "iOSの最小バージョンは実際にApp Storeから取得しています。メモリ、ストレージ、Androidの最小バージョンは推定値です。PC版のSteamのような公式の情報源がMobileには存在しないためです。"
+      },
+      {
+        "q": "XPはどうやって獲得しますか?",
+        "a": "ログインで15XP（1日1回まで）、各ゲームに初めてコメントまたは評価すると50XP、実績解除で変動するXPを獲得できます。"
+      },
+      {
+        "q": "ポイントとショップとは何ですか?",
+        "a": "XPが100貯まるごとに1ポイントを獲得します。ポイントはショップで名前の色、アバターフレーム、プロフィールアイコンと交換できます。"
+      },
+      {
+        "q": "ユーザーの役割はどのように機能しますか?",
+        "a": "ユーザーが標準です。モデレーターはコメントを管理し、既存のゲームを修正できます。管理者はゲームの作成/削除やサイト設定を含む全権限を持ちます。"
+      },
+      {
+        "q": "フィードはCookieを使用しますか?",
+        "a": "はい。サイト独自のCookieがよく閲覧するジャンルを記憶し、ログインしていなくても似たゲームを提案します。このデータが販売されたり第三者と共有されたりすることはありません。"
+      },
+      {
+        "q": "無料ゲームセクションはどのように機能しますか?",
+        "a": "GamerPowerの公開データを使って、Steam、Epic Games、GOG、PlayStation、Xboxの期間限定無料ゲームオファーを表示します。受け取りは常に各ストアの公式サイトで行われます。"
+      },
+      {
+        "q": "モデレーターや管理者になれますか?",
+        "a": "管理者のみが/admin/usersのパネルから他のユーザーをモデレーターまたは管理者に昇格できます。"
+      }
+    ]
+  },
+  "admin": {
+    "dashboardTitle": "管理パネル",
+    "navDashboard": "概要",
+    "navGames": "ゲーム",
+    "navComments": "コメント",
+    "navUsers": "ユーザー",
+    "navSettings": "設定",
+    "statUsers": "ユーザー数",
+    "statGames": "公開ゲーム数",
+    "statComments": "コメント数",
+    "statNotifications": "送信済み通知数",
+    "gamesTitle": "ゲーム管理",
+    "gamesNew": "新規ゲーム",
+    "gamesEdit": "編集",
+    "gamesDelete": "削除",
+    "gamesDeleteConfirm": "本当にこのゲームを削除しますか?",
+    "formTitle": "タイトル",
+    "formSlug": "スラッグ (URL)",
+    "formDescription": "簡単な説明",
+    "formDetonado": "攻略本文",
+    "formHeaderImage": "画像URL",
+    "formGenres": "ジャンル（カンマ区切り）",
+    "formPlatforms": "プラットフォーム",
+    "formSave": "保存",
+    "usersTitle": "ユーザー管理",
+    "commentsTitle": "コメントを管理",
+    "commentsEmpty": "管理対象のコメントはありません。",
+    "commentsRestore": "復元",
+    "commentsHiddenLabel": "非表示",
+    "settingsTitle": "サイト設定",
+    "settingsThemeAccent": "テーマのアクセントカラー",
+    "settingsSchedule": "公開ターンの時間帯",
+    "settingsMorning": "朝",
+    "settingsAfternoon": "昼",
+    "settingsEvening": "夜",
+    "settingsApi": "APIキー",
+    "settingsResendKey": "Resendキー（メール）",
+    "settingsVapidInfo": "VAPIDキー（プッシュ通知）は.envファイルからのみ変更できます。変更後はサーバーを再起動してください。設定状況:",
+    "settingsDatabase": "データベース",
+    "settingsDatabaseHint": "データベースの全テーブルを表示・編集するにはPrisma Studioを使用してください:",
+    "settingsSaved": "設定を保存しました。",
+    "roleUser": "ユーザー",
+    "roleModerator": "モデレーター",
+    "roleAdmin": "管理者"
+  }
+}
