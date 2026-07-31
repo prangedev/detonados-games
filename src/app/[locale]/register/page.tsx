@@ -41,7 +41,7 @@ export default function RegisterPage() {
 
   return (
     <div className="mx-auto max-w-sm space-y-6 py-10">
-      <Image src="/logo.png" alt="Detonados Games" width={172} height={154} className="mx-auto h-16 w-auto" />
+      <Image src="/logo.png" alt="Detona Games" width={172} height={154} className="mx-auto h-16 w-auto" />
       <h1 className="text-center font-display text-xl font-bold text-ink">{t("registerTitle")}</h1>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div>

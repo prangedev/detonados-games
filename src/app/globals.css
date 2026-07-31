@@ -8,7 +8,7 @@
   --font-mono: "JetBrains Mono", monospace;
   /* Cor de destaque (RGB, sem vírgulas) — sobrescrita em runtime pelo
      administrador em /admin/settings via um <style> injetado no layout.
-     Padrão: vermelho extraído da logo Detonados Games. */
+     Padrão: vermelho extraído da logo Detona Games. */
   --color-brand: 242 35 30;
 }
 

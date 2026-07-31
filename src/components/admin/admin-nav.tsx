@@ -7,6 +7,7 @@ export async function AdminNav({ isAdmin }: { isAdmin: boolean }) {
   const links = [
     { href: "/admin", label: t("navDashboard") },
     { href: "/admin/games", label: t("navGames") },
+    { href: "/admin/detonados", label: t("navDetonados") },
     { href: "/admin/comments", label: t("navComments") },
     ...(isAdmin
       ? [

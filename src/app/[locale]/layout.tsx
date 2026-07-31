@@ -7,7 +7,7 @@ import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { Providers } from "@/components/providers";
 import { Header } from "@/components/header";
-import { getThemeAccent } from "@/lib/site-settings";
+import { getThemeAccent, getSiteName } from "@/lib/site-settings";
 import { hexToRgbChannels } from "@/lib/utils";
 import "../globals.css";
 
@@ -15,15 +15,18 @@ const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" }
 const body = Inter({ subsets: ["latin"], variable: "--font-body" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
-export const metadata: Metadata = {
-  title: "Detonados Games",
-  description: "Detonados, requisitos e compatibilidade de hardware para os jogos mais jogados.",
-  manifest: "/manifest.json",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/icon-192.png",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const siteName = await getSiteName().catch(() => "Detona Games");
+  return {
+    title: siteName,
+    description: "Detonados, requisitos e compatibilidade de hardware para os jogos mais jogados.",
+    manifest: "/manifest.json",
+    icons: {
+      icon: "/favicon.ico",
+      apple: "/icon-192.png",
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

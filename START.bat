@@ -1,6 +1,6 @@
 @echo off
 setlocal
-title Detonados Games
+title Detona Games
 cd /d "%~dp0"
 
 echo ============================================================

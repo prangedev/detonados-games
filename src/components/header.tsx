@@ -22,7 +22,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3">
         <div className="flex items-center justify-between gap-3">
           <Link href="/" className="flex shrink-0 items-center">
-            <Image src="/logo.png" alt="Detonados Games" width={172} height={154} className="h-11 w-auto" priority />
+            <Image src="/logo.png" alt="Detona Games" width={172} height={154} className="h-11 w-auto" priority />
           </Link>
 
           <div className="hidden flex-1 justify-center sm:flex">

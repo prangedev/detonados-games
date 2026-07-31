@@ -15,6 +15,7 @@
 
 const STEAMSPY_TOP = "https://steamspy.com/api.php?request=top100in2weeks";
 const STEAM_APPDETAILS = "https://store.steampowered.com/api/appdetails";
+const STEAM_STORESEARCH = "https://store.steampowered.com/api/storesearch";
 
 export async function fetchPopularSteamAppIds(limit = 10): Promise<number[]> {
   const res = await fetch(STEAMSPY_TOP, { next: { revalidate: 3600 } });
@@ -44,4 +45,38 @@ export async function fetchSteamAppDetails(appId: number): Promise<SteamAppDetai
   const entry = json[String(appId)];
   if (!entry?.success) return null;
   return entry.data;
+}
+
+export interface SteamSearchMatch {
+  appId: number;
+  name: string;
+  headerImage: string;
+}
+
+/**
+ * Busca um app da Steam pelo nome (usado só para achar a imagem oficial de
+ * um jogo pesquisado pelo pipeline de detonados — veja
+ * src/lib/detonado-pipeline.ts). Não copia fotos de sites de terceiros: só
+ * usa a imagem quando há correspondência exata (case-insensitive) de nome
+ * na Steam.
+ */
+export async function searchSteamAppByName(title: string): Promise<SteamSearchMatch | null> {
+  const res = await fetch(
+    `${STEAM_STORESEARCH}/?term=${encodeURIComponent(title)}&l=brazilian&cc=BR`,
+    { next: { revalidate: 86400 } }
+  );
+  if (!res.ok) return null;
+
+  const json = (await res.json()) as {
+    items?: { id: number; name: string; tiny_image?: string }[];
+  };
+  const items = json.items ?? [];
+  const normalized = title.trim().toLowerCase();
+  const match = items.find((item) => item.name.trim().toLowerCase() === normalized);
+  if (!match) return null;
+
+  const details = await fetchSteamAppDetails(match.id);
+  if (!details) return null;
+
+  return { appId: match.id, name: details.name, headerImage: details.header_image };
 }

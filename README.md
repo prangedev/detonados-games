@@ -1,4 +1,4 @@
-# Detonados Games (versão local)
+# Detona Games (versão local)
 
 Loja/portal de detonados de jogos — Next.js 14 (App Router) + TypeScript +
 Tailwind CSS, feito para rodar **inteiramente na sua máquina**: frontend,
@@ -116,7 +116,7 @@ agendador local publica esses jogos quando o turno chega.
 
 ## Funcionalidades
 
-- Loja mobile-first com a identidade visual da logo Detonados Games: busca,
+- Loja mobile-first com a identidade visual da logo Detona Games: busca,
   seletor de idioma com bandeiras, grid de jogos, filtro por plataforma,
   página de detonado
 - Pop-up de escolha de plataforma por jogo — requisitos de PC (real, via

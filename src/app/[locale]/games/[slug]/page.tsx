@@ -14,6 +14,7 @@ import { InterestTracker } from "@/components/interest-tracker";
 import type { ParsedRequirements } from "@/lib/hardware-compat";
 import type { MobileRequirements } from "@/lib/mobile-requirements";
 import { PLATFORM_LABELS, type PlatformType } from "@/lib/constants";
+import { getDetonadoSource } from "@/lib/detonado-sources";
 
 const PROTON_TIER_COLORS: Record<string, string> = {
   native: "text-mint",
@@ -27,9 +28,9 @@ const PROTON_TIER_COLORS: Record<string, string> = {
 export default async function GameDetailPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const t = await getTranslations("game");
 
   const game = await db.game.findFirst({ where: { slug, releaseStatus: "PUBLISHED" } });
@@ -40,6 +41,22 @@ export default async function GameDetailPage({
     await grantAchievement(userId, "first-game-viewed");
     await recordGameView(userId, game.id);
   }
+
+  // Conteúdo traduzido pelo pipeline de detonados (src/lib/detonado-pipeline.ts).
+  // Sem tradução para o locale atual, cai nos campos base do jogo (jogos só
+  // sincronizados da Steam continuam funcionando exatamente como antes).
+  const translation = await db.gameTranslation.findUnique({
+    where: { gameId_locale: { gameId: game.id, locale } },
+  });
+  const title = translation?.title || game.title;
+  const shortDescription = translation?.shortDescription ?? game.shortDescription;
+  const detonadoText = translation?.detonado ?? game.detonado;
+
+  const approvedSubmission = await db.detonadoSubmission.findFirst({
+    where: { gameId: game.id, status: "APPROVED" },
+    orderBy: { reviewedAt: "desc" },
+  });
+  const source = approvedSubmission ? getDetonadoSource(approvedSubmission.sourceKey) : null;
 
   const platforms = safeJsonParse<PlatformType[]>(game.platforms, []);
   const genres = safeJsonParse<string[]>(game.genres, []);
@@ -59,14 +76,14 @@ export default async function GameDetailPage({
               fill
               className="scale-110 object-cover opacity-40 blur-xl"
             />
-            <Image src={game.headerImage} alt={game.title} fill className="object-contain" priority />
+            <Image src={game.headerImage} alt={title} fill className="object-contain" priority />
           </>
         )}
       </div>
 
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h1 className="font-display text-2xl font-bold text-ink">{game.title}</h1>
+          <h1 className="font-display text-2xl font-bold text-ink">{title}</h1>
           <div className="mt-2 flex flex-wrap gap-1.5">
             {platforms.map((p) => (
               <Badge key={p}>{PLATFORM_LABELS[p]}</Badge>
@@ -88,7 +105,7 @@ export default async function GameDetailPage({
         )}
       </div>
 
-      {game.shortDescription && <p className="text-sm text-ink-muted">{game.shortDescription}</p>}
+      {shortDescription && <p className="text-sm text-ink-muted">{shortDescription}</p>}
 
       <GameInteractions gameId={game.id} />
       <InterestTracker genres={genres} />
@@ -104,8 +121,21 @@ export default async function GameDetailPage({
       <div>
         <h2 className="mb-2 font-display text-lg font-bold text-ink">{t("walkthrough")}</h2>
         <div className="whitespace-pre-wrap rounded-xl border border-base-border bg-base-surface p-4 text-sm leading-relaxed text-ink-muted">
-          {game.detonado || t("noWalkthrough")}
+          {detonadoText || t("noWalkthrough")}
         </div>
+        {source && (
+          <p className="mt-2 font-mono text-[11px] uppercase tracking-wider text-ink-faint">
+            {t("source")}:{" "}
+            <a
+              href={approvedSubmission!.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-brand hover:underline"
+            >
+              {source.name}
+            </a>
+          </p>
+        )}
       </div>
 
       <CommentsSection gameId={game.id} />

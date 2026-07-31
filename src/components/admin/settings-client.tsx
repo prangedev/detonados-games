@@ -10,12 +10,14 @@ interface Settings {
   shiftHours: { MORNING: number; AFTERNOON: number; EVENING: number };
   resendKeyConfigured: boolean;
   vapidConfigured: boolean;
+  geminiKeyConfigured: boolean;
 }
 
 export function SettingsClient() {
   const t = useTranslations("admin");
   const [settings, setSettings] = useState<Settings | null>(null);
   const [resendApiKey, setResendApiKey] = useState("");
+  const [geminiApiKey, setGeminiApiKey] = useState("");
   const [saved, setSaved] = useState(false);
 
   useEffect(() => {
@@ -34,6 +36,7 @@ export function SettingsClient() {
         themeAccent: settings.themeAccent,
         shiftHours: settings.shiftHours,
         resendApiKey: resendApiKey || undefined,
+        geminiApiKey: geminiApiKey || undefined,
       }),
     });
     if (res.ok) setSaved(true);
@@ -99,6 +102,20 @@ export function SettingsClient() {
         <p className="font-mono text-[11px] leading-relaxed text-ink-faint">
           {t("settingsVapidInfo")} {settings.vapidConfigured ? "✓" : "✗"}
         </p>
+        <div>
+          <label className="mb-1 block text-xs text-ink-muted">
+            {t("settingsGeminiKey")} {settings.geminiKeyConfigured ? "✓" : ""}
+          </label>
+          <Input
+            type="password"
+            placeholder="AIza********************************"
+            value={geminiApiKey}
+            onChange={(e) => setGeminiApiKey(e.target.value)}
+          />
+          <p className="mt-1 font-mono text-[11px] leading-relaxed text-ink-faint">
+            {t("settingsGeminiKeyHint")}
+          </p>
+        </div>
       </section>
 
       <section className="space-y-2">

@@ -23,7 +23,7 @@ export async function sendNotificationEmail(params: {
   const resend = new Resend(apiKey);
 
   await resend.emails.send({
-    from: process.env.EMAIL_FROM ?? "Detonados Games <notificacoes@detonados.games>",
+    from: process.env.EMAIL_FROM ?? "Detona Games <notificacoes@detonados.games>",
     to: user.email,
     subject: params.title,
     html: `
@@ -32,7 +32,7 @@ export async function sendNotificationEmail(params: {
         <p style="margin:0;line-height:1.6;">${params.message}</p>
         <hr style="border:none;border-top:1px solid #332C46;margin:24px 0;" />
         <p style="color:#9A93A8;font-size:12px;margin:0;">
-          Detonados Games — você pode ajustar suas preferências de notificação a qualquer momento.
+          Detona Games — você pode ajustar suas preferências de notificação a qualquer momento.
         </p>
       </div>
     `,

@@ -8,6 +8,21 @@ import { PLATFORMS } from "@/lib/constants";
 import { buildMobileRequirements } from "@/lib/mobile-requirements";
 import type { ParsedRequirements } from "@/lib/hardware-compat";
 
+export async function GET() {
+  const role = await getCurrentUserRole();
+  if (!hasAtLeastRole(role, "MODERATOR")) {
+    return NextResponse.json({ error: "Sem permissão." }, { status: 403 });
+  }
+
+  const games = await db.game.findMany({
+    select: { id: true, title: true, slug: true },
+    orderBy: { title: "asc" },
+    take: 500,
+  });
+
+  return NextResponse.json({ games });
+}
+
 const GameInputSchema = z.object({
   title: z.string().min(1).max(200),
   slug: z.string().min(1).max(200),

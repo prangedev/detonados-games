@@ -66,12 +66,24 @@ export async function setShiftHours(hours: Record<ShiftType, number>): Promise<v
 // o .env e reinicie o servidor.
 // ---------------------------------------------------------------------------
 
-export async function getApiKeyOverride(name: "RESEND_API_KEY"): Promise<string | null> {
+type OverridableApiKey = "RESEND_API_KEY" | "GEMINI_API_KEY";
+
+export async function getApiKeyOverride(name: OverridableApiKey): Promise<string | null> {
   return getSetting(`apiKey.${name}`);
 }
 
-export async function setApiKeyOverride(name: "RESEND_API_KEY", value: string): Promise<void> {
+export async function setApiKeyOverride(name: OverridableApiKey, value: string): Promise<void> {
   await setSetting(`apiKey.${name}`, value);
+}
+
+/**
+ * Chave efetiva do Gemini: prioriza o valor salvo pelo painel (/admin/settings)
+ * sobre o .env, igual ao RESEND_API_KEY. Usada pelo pipeline de pesquisa de
+ * detonados (src/lib/gemini.ts).
+ */
+export async function getGeminiApiKey(): Promise<string | null> {
+  const override = await getApiKeyOverride("GEMINI_API_KEY");
+  return override || process.env.GEMINI_API_KEY || null;
 }
 
 // ---------------------------------------------------------------------------
@@ -80,5 +92,5 @@ export async function setApiKeyOverride(name: "RESEND_API_KEY", value: string): 
 
 export async function getSiteName(): Promise<string> {
   const value = await getSetting("site.name");
-  return value ?? "Detonados Games";
+  return value ?? "Detona Games";
 }

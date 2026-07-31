@@ -27,7 +27,7 @@
     "all": "Alle"
   },
   "home": {
-    "title": "Detonados Games",
+    "title": "Detona Games",
     "subtitle": "Komplettlösungen, Systemanforderungen und Kompatibilität für die meistgespielten Spiele.",
     "filterByPlatform": "Nach Plattform filtern",
     "noResults": "Keine Spiele mit diesen Filtern gefunden."
@@ -53,6 +53,7 @@
     "graphics": "Grafikkarte",
     "storage": "Speicherplatz",
     "noWalkthrough": "Komplettlösung in Arbeit — schau bald wieder vorbei.",
+    "source": "Quelle",
     "selectPlatformTitle": "Auf welcher Plattform wirst du spielen?",
     "selectPlatformSubtitle": "Das passt die hier angezeigten Anforderungen und Tools an.",
     "changePlatform": "Plattform wechseln",
@@ -116,7 +117,7 @@
   },
   "leaderboard": {
     "title": "Globale Bestenliste",
-    "subtitle": "Die Spieler mit den meisten XP auf Detonados Games.",
+    "subtitle": "Die Spieler mit den meisten XP auf Detona Games.",
     "rank": "Rang",
     "player": "Spieler",
     "xp": "XP",
@@ -167,10 +168,10 @@
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was du über Detonados Games wissen musst.",
+    "subtitle": "Alles, was du über Detona Games wissen musst.",
     "items": [
       {
-        "q": "Was ist Detonados Games?",
+        "q": "Was ist Detona Games?",
         "a": "Ein Portal für Spiele-Komplettlösungen mit Systemanforderungen, einer Hardware-Kompatibilitätsprüfung, XP, Erfolgen und einer Community, die Spiele kommentiert und bewertet."
       },
       {
@@ -211,6 +212,7 @@
     "dashboardTitle": "Verwaltungsbereich",
     "navDashboard": "Übersicht",
     "navGames": "Spiele",
+    "navDetonados": "Komplettlösungs-Warteschlange",
     "navComments": "Kommentare",
     "navUsers": "Benutzer",
     "navSettings": "Einstellungen",
@@ -231,6 +233,23 @@
     "formGenres": "Genres (durch Komma getrennt)",
     "formPlatforms": "Plattformen",
     "formSave": "Speichern",
+    "formGameTitle": "Spieltitel",
+    "formExistingGame": "Vorhandenes Spiel (optional)",
+    "formExistingGameNone": "Keines — neues Spiel erstellen",
+    "formSource": "Quelle",
+    "formSourceUrl": "Artikel-URL",
+    "researchButton": "Recherchieren",
+    "detonadosTitle": "Komplettlösungs-Warteschlange",
+    "detonadosSubtitle": "Recherchiere eine Komplettlösung aus einer Quelle, prüfe die Übersetzung in allen 7 Sprachen und genehmige sie vor der Veröffentlichung.",
+    "detonadosResearching": "Recherche läuft... das kann einige Sekunden dauern.",
+    "detonadosResearchError": "Die Recherche konnte nicht abgeschlossen werden.",
+    "detonadosEmpty": "Keine ausstehende Recherche.",
+    "sourceLabel": "Quelle",
+    "viewTranslations": "Übersetzungen ansehen (6 Sprachen)",
+    "viewOriginal": "Extrahierten Originaltext ansehen",
+    "approve": "Genehmigen",
+    "reject": "Ablehnen",
+    "rejectNotePlaceholder": "Ablehnungsgrund (optional)",
     "usersTitle": "Benutzer verwalten",
     "commentsTitle": "Kommentare moderieren",
     "commentsEmpty": "Keine Kommentare zu moderieren.",
@@ -244,6 +263,8 @@
     "settingsEvening": "Abend",
     "settingsApi": "API-Schlüssel",
     "settingsResendKey": "Resend-Schlüssel (E-Mail)",
+    "settingsGeminiKey": "Gemini-API-Schlüssel (Komplettlösungs-Recherche)",
+    "settingsGeminiKeyHint": "Wird von der automatischen Komplettlösungs-Recherche unter /admin/detonados verwendet. Ohne Schlüssel zeigt die Schaltfläche einen klaren Fehler an.",
     "settingsVapidInfo": "VAPID-Schlüssel (Push) können nur über die .env-Datei geändert werden — starte den Server nach der Änderung neu. Konfiguriert:",
     "settingsDatabase": "Datenbank",
     "settingsDatabaseHint": "Verwende Prisma Studio, um alle Tabellen der Datenbank anzuzeigen und zu bearbeiten:",

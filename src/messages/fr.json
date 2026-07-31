@@ -27,7 +27,7 @@
     "all": "Toutes"
   },
   "home": {
-    "title": "Detonados Games",
+    "title": "Detona Games",
     "subtitle": "Guides complets, configurations requises et compatibilité pour les jeux les plus joués.",
     "filterByPlatform": "Filtrer par plateforme",
     "noResults": "Aucun jeu trouvé avec ces filtres."
@@ -53,6 +53,7 @@
     "graphics": "Carte graphique",
     "storage": "Stockage",
     "noWalkthrough": "Soluce en préparation — revenez bientôt.",
+    "source": "Source",
     "selectPlatformTitle": "Sur quelle plateforme allez-vous jouer ?",
     "selectPlatformSubtitle": "Cela ajuste la configuration requise et les outils affichés ici.",
     "changePlatform": "Changer de plateforme",
@@ -116,7 +117,7 @@
   },
   "leaderboard": {
     "title": "Classement Global",
-    "subtitle": "Les joueurs avec le plus d'XP sur Detonados Games.",
+    "subtitle": "Les joueurs avec le plus d'XP sur Detona Games.",
     "rank": "Rang",
     "player": "Joueur",
     "xp": "XP",
@@ -167,10 +168,10 @@
   },
   "faq": {
     "title": "Questions fréquentes",
-    "subtitle": "Tout ce qu'il faut savoir sur Detonados Games.",
+    "subtitle": "Tout ce qu'il faut savoir sur Detona Games.",
     "items": [
       {
-        "q": "Qu'est-ce que Detonados Games ?",
+        "q": "Qu'est-ce que Detona Games ?",
         "a": "Un portail de soluces de jeux, avec configuration requise, vérificateur de compatibilité matérielle, XP, succès et une communauté qui commente et note les jeux."
       },
       {
@@ -211,6 +212,7 @@
     "dashboardTitle": "Panneau d'administration",
     "navDashboard": "Aperçu",
     "navGames": "Jeux",
+    "navDetonados": "File d'attente des soluces",
     "navComments": "Commentaires",
     "navUsers": "Utilisateurs",
     "navSettings": "Paramètres",
@@ -231,6 +233,23 @@
     "formGenres": "Genres (séparés par des virgules)",
     "formPlatforms": "Plateformes",
     "formSave": "Enregistrer",
+    "formGameTitle": "Titre du jeu",
+    "formExistingGame": "Jeu existant (optionnel)",
+    "formExistingGameNone": "Aucun — créer un nouveau jeu",
+    "formSource": "Source",
+    "formSourceUrl": "URL de l'article",
+    "researchButton": "Rechercher",
+    "detonadosTitle": "File d'attente des soluces",
+    "detonadosSubtitle": "Recherchez une soluce à partir d'une source, vérifiez la traduction dans les 7 langues et approuvez avant la publication.",
+    "detonadosResearching": "Recherche en cours... cela peut prendre quelques secondes.",
+    "detonadosResearchError": "Impossible de terminer la recherche.",
+    "detonadosEmpty": "Aucune recherche en attente.",
+    "sourceLabel": "Source",
+    "viewTranslations": "Voir les traductions (6 langues)",
+    "viewOriginal": "Voir le texte original extrait",
+    "approve": "Approuver",
+    "reject": "Rejeter",
+    "rejectNotePlaceholder": "Motif du rejet (optionnel)",
     "usersTitle": "Gérer les utilisateurs",
     "commentsTitle": "Modérer les commentaires",
     "commentsEmpty": "Aucun commentaire à modérer.",
@@ -244,6 +263,8 @@
     "settingsEvening": "Soir",
     "settingsApi": "Clés API",
     "settingsResendKey": "Clé Resend (e-mail)",
+    "settingsGeminiKey": "Clé API Gemini (recherche de soluces)",
+    "settingsGeminiKeyHint": "Utilisée par la recherche automatique de soluces dans /admin/detonados. Sans clé, le bouton de recherche affiche une erreur claire.",
     "settingsVapidInfo": "Les clés VAPID (push) ne peuvent être changées que dans le fichier .env — redémarrez le serveur après modification. Configurée :",
     "settingsDatabase": "Base de données",
     "settingsDatabaseHint": "Utilisez Prisma Studio pour voir et modifier toutes les tables de la base de données :",

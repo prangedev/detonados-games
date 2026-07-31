@@ -13,7 +13,7 @@ const ACHIEVEMENTS = [
   {
     key: "first-login",
     name: "Primeiro Acesso",
-    description: "Criou sua conta em Detonados Games.",
+    description: "Criou sua conta em Detona Games.",
     rarity: "COMUM",
     xpReward: 10,
   },
@@ -148,7 +148,7 @@ const SAMPLE_GAMES = [
 const DEFAULT_SETTINGS: Record<string, string> = {
   "theme.accent": "#F2231E",
   "schedule.shiftHours": JSON.stringify({ MORNING: 9, AFTERNOON: 15, EVENING: 21 }),
-  "site.name": "Detonados Games",
+  "site.name": "Detona Games",
 };
 
 // Loja de pontos (100 XP = 1 Ponto). "Avatares animados" hoje são um

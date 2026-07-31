@@ -27,7 +27,7 @@
     "all": "すべて"
   },
   "home": {
-    "title": "Detonados Games",
+    "title": "Detona Games",
     "subtitle": "人気ゲームの完全攻略、必要動作環境、互換性情報。",
     "filterByPlatform": "プラットフォームで絞り込み",
     "noResults": "条件に一致するゲームが見つかりません。"
@@ -53,6 +53,7 @@
     "graphics": "グラフィックカード",
     "storage": "ストレージ",
     "noWalkthrough": "攻略記事は準備中です。もうしばらくお待ちください。",
+    "source": "ソース",
     "selectPlatformTitle": "どのプラットフォームでプレイしますか?",
     "selectPlatformSubtitle": "選択に応じて表示される動作環境とツールが変わります。",
     "changePlatform": "プラットフォームを変更",
@@ -116,7 +117,7 @@
   },
   "leaderboard": {
     "title": "グローバルランキング",
-    "subtitle": "Detonados Gamesで最もXPを獲得したプレイヤー。",
+    "subtitle": "Detona Gamesで最もXPを獲得したプレイヤー。",
     "rank": "順位",
     "player": "プレイヤー",
     "xp": "XP",
@@ -167,10 +168,10 @@
   },
   "faq": {
     "title": "よくある質問",
-    "subtitle": "Detonados Gamesについて知っておきたいこと。",
+    "subtitle": "Detona Gamesについて知っておきたいこと。",
     "items": [
       {
-        "q": "Detonados Gamesとは何ですか?",
+        "q": "Detona Gamesとは何ですか?",
         "a": "動作環境、ハードウェア互換性チェッカー、XP、実績、そしてゲームにコメントや評価をつけるコミュニティを備えたゲーム攻略ポータルです。"
       },
       {
@@ -211,6 +212,7 @@
     "dashboardTitle": "管理パネル",
     "navDashboard": "概要",
     "navGames": "ゲーム",
+    "navDetonados": "攻略記事キュー",
     "navComments": "コメント",
     "navUsers": "ユーザー",
     "navSettings": "設定",
@@ -231,6 +233,23 @@
     "formGenres": "ジャンル（カンマ区切り）",
     "formPlatforms": "プラットフォーム",
     "formSave": "保存",
+    "formGameTitle": "ゲームタイトル",
+    "formExistingGame": "既存のゲーム（任意）",
+    "formExistingGameNone": "なし — 新しいゲームを作成",
+    "formSource": "ソース",
+    "formSourceUrl": "記事のURL",
+    "researchButton": "リサーチ",
+    "detonadosTitle": "攻略記事キュー",
+    "detonadosSubtitle": "ソースから攻略記事をリサーチし、7言語の翻訳を確認してから公開を承認します。",
+    "detonadosResearching": "リサーチ中...数秒かかることがあります。",
+    "detonadosResearchError": "リサーチを完了できませんでした。",
+    "detonadosEmpty": "保留中のリサーチはありません。",
+    "sourceLabel": "ソース",
+    "viewTranslations": "翻訳を見る（6言語）",
+    "viewOriginal": "抽出された元のテキストを見る",
+    "approve": "承認",
+    "reject": "却下",
+    "rejectNotePlaceholder": "却下理由（任意）",
     "usersTitle": "ユーザー管理",
     "commentsTitle": "コメントを管理",
     "commentsEmpty": "管理対象のコメントはありません。",
@@ -244,6 +263,8 @@
     "settingsEvening": "夜",
     "settingsApi": "APIキー",
     "settingsResendKey": "Resendキー（メール）",
+    "settingsGeminiKey": "Gemini APIキー（攻略記事リサーチ）",
+    "settingsGeminiKeyHint": "/admin/detonados の自動攻略記事リサーチで使用されます。キーがない場合、リサーチボタンは明確なエラーを表示します。",
     "settingsVapidInfo": "VAPIDキー（プッシュ通知）は.envファイルからのみ変更できます。変更後はサーバーを再起動してください。設定状況:",
     "settingsDatabase": "データベース",
     "settingsDatabaseHint": "データベースの全テーブルを表示・編集するにはPrisma Studioを使用してください:",

@@ -1,6 +1,6 @@
 ﻿#Requires -Version 5.1
 <#
-    Detonados Games - Bootstrap local (Windows)
+    Detona Games - Bootstrap local (Windows)
     ---------------------------------------------
     Este script e chamado pelo START.bat. Ele:
       1. Confere a estrutura de pastas do projeto
@@ -197,7 +197,9 @@ Ensure-EnvKey $envPath "NEXTAUTH_URL" "http://localhost:3000"
 Ensure-EnvKey $envPath "NEXTAUTH_SECRET" "troque-por-um-segredo-aleatorio"
 Ensure-EnvKey $envPath "CRON_SECRET" "troque-por-um-segredo-aleatorio"
 Ensure-EnvKey $envPath "RESEND_API_KEY" ""
-Ensure-EnvKey $envPath "EMAIL_FROM" "Detonados Games <notificacoes@detonados.games>"
+Ensure-EnvKey $envPath "GEMINI_API_KEY" ""
+Ensure-EnvKey $envPath "GEMINI_MODEL" "gemini-2.0-flash"
+Ensure-EnvKey $envPath "EMAIL_FROM" "Detona Games <notificacoes@detonados.games>"
 Ensure-EnvKey $envPath "NEXT_PUBLIC_VAPID_PUBLIC_KEY" ""
 Ensure-EnvKey $envPath "VAPID_PRIVATE_KEY" ""
 
@@ -287,7 +289,7 @@ if (Test-PortInUse 3000) {
 }
 
 Write-Host ""
-Write-Host "Detonados Games esta rodando (Next.js + agendador local)." -ForegroundColor Green
+Write-Host "Detona Games esta rodando (Next.js + agendador local)." -ForegroundColor Green
 Write-Host "Pressione CTRL+C nesta janela para encerrar tudo." -ForegroundColor DarkGray
 Write-Host ""
 

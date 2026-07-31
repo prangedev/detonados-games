@@ -1,4 +1,4 @@
-// Prisma schema — Detonados Games
+// Prisma schema — Detona Games
 // Dialeto SQLite (compatível com Turso/libsql). SQLite não suporta enums
 // nativamente, então usamos String com valores validados via Zod/TS
 // (veja src/lib/constants.ts e src/lib/roles.ts para as listas de valores
@@ -135,8 +135,28 @@ model Game {
   likes      Like[]
   ratings    Rating[]
   savedBy    SavedGame[]
+  translations GameTranslation[]
+  detonadoSubmissions DetonadoSubmission[]
 
   @@index([releaseStatus, shift, scheduledFor])
+}
+
+// Conteúdo de um jogo por idioma (título, descrição curta, detonado),
+// gerado pelo pipeline de pesquisa/tradução do Gemini (veja
+// src/lib/detonado-pipeline.ts). Um jogo sem tradução para um locale usa os
+// campos base do Game (fallback tratado em src/app/[locale]/games/[slug]/page.tsx).
+model GameTranslation {
+  id               String   @id @default(cuid())
+  gameId           String
+  locale           String   // um de LOCALES (src/lib/constants.ts)
+  title            String?
+  shortDescription String?
+  detonado         String?
+  updatedAt        DateTime @updatedAt
+
+  game Game @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  @@unique([gameId, locale])
 }
 
 model GameView {
@@ -333,4 +353,51 @@ model SiteSetting {
   key       String   @id
   value     String
   updatedAt DateTime @updatedAt
+}
+
+// ---------------------------------------------------------------------------
+// FILA DE PESQUISA DE DETONADOS (Gemini) — só esse fluxo passa por aprovação
+// de Moderador/Administrador antes de virar um Game público; sync da Steam e
+// edição manual de jogo continuam publicando direto, como já funcionava.
+// ---------------------------------------------------------------------------
+
+model DetonadoSubmission {
+  id             String  @id @default(cuid())
+  gameId         String? // preenchido quando aprovado (jogo criado ou atualizado)
+  existingGameId String? // setado na pesquisa quando é pra ATUALIZAR um jogo já existente
+  gameTitle      String
+  platforms      String  // JSON array (PLATFORMS)
+  sourceKey      String  // chave de DETONADO_SOURCES (src/lib/detonado-sources.ts)
+  sourceUrl      String
+  sourceLanguage String
+
+  rawExtract  String  // texto extraído do artigo original (auditoria/comparação na revisão)
+  headerImage String? // só preenchido se casou com um jogo da Steam
+
+  // valores: PENDING | APPROVED | REJECTED
+  status        String    @default("PENDING")
+  reviewedById  String?
+  reviewedAt    DateTime?
+  rejectionNote String?
+
+  createdById String
+  createdAt   DateTime @default(now())
+
+  game         Game?                            @relation(fields: [gameId], references: [id], onDelete: SetNull)
+  translations DetonadoSubmissionTranslation[]
+
+  @@index([status, createdAt])
+}
+
+model DetonadoSubmissionTranslation {
+  id               String @id @default(cuid())
+  submissionId     String
+  locale           String
+  title            String
+  shortDescription String
+  detonado         String
+
+  submission DetonadoSubmission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+
+  @@unique([submissionId, locale])
 }

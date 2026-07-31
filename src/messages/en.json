@@ -27,7 +27,7 @@
     "all": "All"
   },
   "home": {
-    "title": "Detonados Games",
+    "title": "Detona Games",
     "subtitle": "Complete guides, requirements and compatibility for the most played games.",
     "filterByPlatform": "Filter by platform",
     "noResults": "No games found with these filters."
@@ -53,6 +53,7 @@
     "graphics": "Graphics card",
     "storage": "Storage",
     "noWalkthrough": "Walkthrough in progress — check back soon.",
+    "source": "Source",
     "selectPlatformTitle": "Which platform will you play on?",
     "selectPlatformSubtitle": "This adjusts the requirements and tools shown here.",
     "changePlatform": "Change platform",
@@ -116,7 +117,7 @@
   },
   "leaderboard": {
     "title": "Global Leaderboard",
-    "subtitle": "The players with the most XP on Detonados Games.",
+    "subtitle": "The players with the most XP on Detona Games.",
     "rank": "Rank",
     "player": "Player",
     "xp": "XP",
@@ -167,10 +168,10 @@
   },
   "faq": {
     "title": "Frequently asked questions",
-    "subtitle": "Everything you need to know about Detonados Games.",
+    "subtitle": "Everything you need to know about Detona Games.",
     "items": [
       {
-        "q": "What is Detonados Games?",
+        "q": "What is Detona Games?",
         "a": "A game walkthrough portal with system requirements, a hardware compatibility checker, XP, achievements, and a community that comments on and rates games."
       },
       {
@@ -211,6 +212,7 @@
     "dashboardTitle": "Admin Dashboard",
     "navDashboard": "Overview",
     "navGames": "Games",
+    "navDetonados": "Walkthrough Queue",
     "navComments": "Comments",
     "navUsers": "Users",
     "navSettings": "Settings",
@@ -231,6 +233,23 @@
     "formGenres": "Genres (comma-separated)",
     "formPlatforms": "Platforms",
     "formSave": "Save",
+    "formGameTitle": "Game title",
+    "formExistingGame": "Existing game (optional)",
+    "formExistingGameNone": "None — create a new game",
+    "formSource": "Source",
+    "formSourceUrl": "Article URL",
+    "researchButton": "Research",
+    "detonadosTitle": "Walkthrough Queue",
+    "detonadosSubtitle": "Research a walkthrough from a source, review the translation in all 7 languages, and approve before publishing.",
+    "detonadosResearching": "Researching... this may take a few seconds.",
+    "detonadosResearchError": "Could not complete the research.",
+    "detonadosEmpty": "No pending research.",
+    "sourceLabel": "Source",
+    "viewTranslations": "View translations (6 languages)",
+    "viewOriginal": "View original extracted text",
+    "approve": "Approve",
+    "reject": "Reject",
+    "rejectNotePlaceholder": "Rejection reason (optional)",
     "usersTitle": "Manage users",
     "commentsTitle": "Moderate comments",
     "commentsEmpty": "No comments to moderate.",
@@ -244,6 +263,8 @@
     "settingsEvening": "Evening",
     "settingsApi": "API keys",
     "settingsResendKey": "Resend key (email)",
+    "settingsGeminiKey": "Gemini API key (walkthrough research)",
+    "settingsGeminiKeyHint": "Used by the automatic walkthrough research in /admin/detonados. Without a key, the research button shows a clear error.",
     "settingsVapidInfo": "VAPID keys (push) can only be changed via the .env file — restart the server after changing. Configured:",
     "settingsDatabase": "Database",
     "settingsDatabaseHint": "Use Prisma Studio to view and edit every table in the database:",

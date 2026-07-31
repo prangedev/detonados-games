@@ -27,7 +27,7 @@
     "all": "Todas"
   },
   "home": {
-    "title": "Detonados Games",
+    "title": "Detona Games",
     "subtitle": "Guías completas, requisitos y compatibilidad para los juegos más jugados.",
     "filterByPlatform": "Filtrar por plataforma",
     "noResults": "No se encontraron juegos con estos filtros."
@@ -53,6 +53,7 @@
     "graphics": "Tarjeta gráfica",
     "storage": "Almacenamiento",
     "noWalkthrough": "Guía en producción — vuelve pronto.",
+    "source": "Fuente",
     "selectPlatformTitle": "¿En qué plataforma vas a jugar?",
     "selectPlatformSubtitle": "Esto ajusta los requisitos y las herramientas que se muestran aquí.",
     "changePlatform": "Cambiar plataforma",
@@ -116,7 +117,7 @@
   },
   "leaderboard": {
     "title": "Ranking Global",
-    "subtitle": "Los jugadores con más XP en Detonados Games.",
+    "subtitle": "Los jugadores con más XP en Detona Games.",
     "rank": "Posición",
     "player": "Jugador",
     "xp": "XP",
@@ -167,10 +168,10 @@
   },
   "faq": {
     "title": "Preguntas frecuentes",
-    "subtitle": "Todo lo que necesitas saber sobre Detonados Games.",
+    "subtitle": "Todo lo que necesitas saber sobre Detona Games.",
     "items": [
       {
-        "q": "¿Qué es Detonados Games?",
+        "q": "¿Qué es Detona Games?",
         "a": "Un portal de guías de juegos, con requisitos del sistema, verificador de compatibilidad de hardware, XP, logros y una comunidad que comenta y califica los juegos."
       },
       {
@@ -211,6 +212,7 @@
     "dashboardTitle": "Panel de Administración",
     "navDashboard": "Resumen",
     "navGames": "Juegos",
+    "navDetonados": "Cola de Detonados",
     "navComments": "Comentarios",
     "navUsers": "Usuarios",
     "navSettings": "Configuración",
@@ -231,6 +233,23 @@
     "formGenres": "Géneros (separados por coma)",
     "formPlatforms": "Plataformas",
     "formSave": "Guardar",
+    "formGameTitle": "Título del juego",
+    "formExistingGame": "Juego existente (opcional)",
+    "formExistingGameNone": "Ninguno — crear juego nuevo",
+    "formSource": "Fuente",
+    "formSourceUrl": "URL del artículo",
+    "researchButton": "Investigar",
+    "detonadosTitle": "Cola de Detonados",
+    "detonadosSubtitle": "Investiga un detonado a partir de una fuente, revisa la traducción en los 7 idiomas y apruébalo antes de publicar.",
+    "detonadosResearching": "Investigando... esto puede tardar unos segundos.",
+    "detonadosResearchError": "No se pudo completar la investigación.",
+    "detonadosEmpty": "Ninguna investigación pendiente.",
+    "sourceLabel": "Fuente",
+    "viewTranslations": "Ver traducciones (6 idiomas)",
+    "viewOriginal": "Ver texto original extraído",
+    "approve": "Aprobar",
+    "reject": "Rechazar",
+    "rejectNotePlaceholder": "Motivo del rechazo (opcional)",
     "usersTitle": "Gestionar usuarios",
     "commentsTitle": "Moderar comentarios",
     "commentsEmpty": "No hay comentarios para moderar.",
@@ -244,6 +263,8 @@
     "settingsEvening": "Noche",
     "settingsApi": "Claves de API",
     "settingsResendKey": "Clave de Resend (correo)",
+    "settingsGeminiKey": "Clave de la API de Gemini (investigación de detonados)",
+    "settingsGeminiKeyHint": "Usada por la investigación automática de detonados en /admin/detonados. Sin clave, el botón de investigación muestra un error claro.",
     "settingsVapidInfo": "Las claves VAPID (push) solo se pueden cambiar en el archivo .env — reinicia el servidor después de cambiarlas. Configurada:",
     "settingsDatabase": "Base de datos",
     "settingsDatabaseHint": "Usa Prisma Studio para ver y editar todas las tablas de la base de datos:",
